@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { media } from "../../styles/responsive";
 import { THEME } from './../../styles/theme';
 
 export const StyledButton = styled.div`
@@ -17,6 +18,9 @@ export const StyledButton = styled.div`
     font-weight: 900;
     text-decoration: none;
     transition: opacity 0.15s ease;
+    ${media.down("xl")} {
+      font-size: 16px;
+    }
     &:hover {
       background-color: #4d56db;
     }
