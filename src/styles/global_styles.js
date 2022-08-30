@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components"
+import { THEME } from './theme';
 
 
 export const GlobalStyles = createGlobalStyle`
@@ -18,6 +19,7 @@ html, body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Nunito', sans-serif;
 }
 
 img, picture, video, canvas, svg {
