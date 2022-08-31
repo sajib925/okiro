@@ -6,8 +6,8 @@ import {BsThreeDots} from "react-icons/bs";
 import logo from "../../../public/image/logo/logo.svg";
 import {Button} from "../button/button";
 import {FaSearch} from "react-icons/fa";
-import {GiHamburgerMenu} from "react-icons/gi"; 
-import {MdClose} from 'react-icons/md';
+import {GiHamburgerMenu} from "react-icons/gi";
+import {MdClose} from "react-icons/md";
 export const Header = () => {
   const [subMenu, setSubMenu] = useState(false);
   const subMenuClick = () => {

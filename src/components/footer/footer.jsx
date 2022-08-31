@@ -21,16 +21,24 @@ export const Footer = () => {
           </p>
           <div className="footerLinks">
             <Link to="/">
-              <BsFacebook color={"#2b394e"} size={25} />
+              <span>
+                <BsFacebook  size={25} />
+              </span>
             </Link>
             <Link to="/">
-              <BsTwitter color={"#2b394e"} size={25} />
+              <span>
+                <BsTwitter size={25} />
+              </span>
             </Link>
             <Link to="/">
-              <FaMeetup color={"#2b394e"} size={25} />
+              <span>
+                <FaMeetup size={25} />
+              </span>
             </Link>
             <Link to="/">
-              <ImYoutube color={"#2b394e"} size={25} />
+              <span>
+                <ImYoutube size={25} />
+              </span>
             </Link>
           </div>
         </div>
