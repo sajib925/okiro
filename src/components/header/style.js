@@ -57,8 +57,9 @@ export const StyledHeader = styled.header`
         }
       }
 
-      .submenuClick {
+      .subMenuClick {
         position: relative;
+        cursor: pointer;
         .subMenuLinks {
           padding: 20px 20px 15px 26px;
           background-color: ${THEME.colors.colorTwo};
@@ -107,6 +108,7 @@ export const StyledHeader = styled.header`
         justify-content: flex-end;
       }
       .searchIcon {
+        cursor: pointer;
         ${media.down("lg")} {
           display: none;
         }

@@ -24,11 +24,12 @@ export const StyledFeaturesCard = styled.div`
     margin: 0 20px;
     border-radius: 22px;
     transition: transform 0.2s ease;
-    ${media.down("xl")}{
+    transform: translateY(0);
+    ${media.down("xl")} {
       margin: 0;
     }
     &:hover {
-      margin-top: -2px;
+      transform: translateY(-4px);
     }
 
     .thumbnail {
@@ -38,6 +39,12 @@ export const StyledFeaturesCard = styled.div`
         border-radius: 22px;
         margin-bottom: 14px;
         object-fit: cover;
+        ${media.down("lg")} {
+          width: 177px;
+        }
+        ${media.down("md")} {
+          width: 175px;
+        }
       }
     }
     .cardText {
@@ -49,11 +56,20 @@ export const StyledFeaturesCard = styled.div`
           font-size: 20px;
           text-decoration: none;
           color: ${THEME.colors.primary};
+          ${media.down("xl")} {
+            font-size: 19px;
+          }
+          ${media.down("lg")} {
+            font-size: 16px;
+          }
+          ${media.down("sm")} {
+            font-size: 15px;
+          }
         }
       }
       .owner {
         display: inline-block;
-        ${media.down("lg")}{
+        ${media.down("lg")} {
           display: none;
         }
         a {

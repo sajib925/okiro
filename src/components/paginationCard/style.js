@@ -3,7 +3,7 @@ import { media } from "../../styles/responsive";
 
 export const StyledPaginationCard = styled.div`
   position: relative;
-  margin: 0 170px 72px 170px;
+
   .paginationTitle {
     display: none;
     ${media.down("lg")} {
@@ -27,7 +27,7 @@ export const StyledPaginationCard = styled.div`
     }
   }
   .rotateTitle {
-    ${media.down("lg")}{
+    ${media.down("lg")} {
       display: none;
     }
     font-size: 10px;
@@ -49,5 +49,8 @@ export const StyledPaginationCard = styled.div`
     justify-content: center;
     align-items: flex-start;
     column-gap: 10px;
+    ${media.down("sm")} {
+      flex-wrap: wrap;
+    }
   }
 `;

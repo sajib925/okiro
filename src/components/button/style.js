@@ -3,8 +3,7 @@ import { media } from "../../styles/responsive";
 import { THEME } from './../../styles/theme';
 
 export const StyledButton = styled.div`
-  .btnSmall {
-    padding: 12px 22px;
+  .btn {
     font-size: 19px;
     display: inline-block;
     pointer-events: auto;
@@ -24,5 +23,11 @@ export const StyledButton = styled.div`
     &:hover {
       background-color: #4d56db;
     }
+  }
+  .btnSmall {
+    padding: 12px 22px;
+  }
+  .btnBig {
+    padding: 22px 26px;
   }
 `;

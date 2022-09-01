@@ -3,13 +3,10 @@ import { media } from "../../styles/responsive";
 
 export const StyledHero = styled.section`
   position: relative;
-  margin: 10px 142px;
+
   ${media.down("xl")} {
-    margin: 0;
-    padding: 55px;
   }
   ${media.down("lg")} {
-    padding: 0 45px;
   }
   .featuredTitle {
     display: none;
@@ -57,8 +54,9 @@ export const StyledHero = styled.section`
     align-items: flex-start;
     justify-content: center;
     grid-column-gap: 20px;
-    ${media.down("md")} {
-      grid-template-columns: 1fr 1fr 1fr;
+    ${media.down("sm")} {
+      grid-template-columns: 1fr 1fr;
     }
+    
   }
 `;

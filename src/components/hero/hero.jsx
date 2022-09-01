@@ -1,5 +1,5 @@
-import React from 'react'
-import { StyledHero } from './style';
+import React from "react";
+import {StyledHero} from "./style";
 import {FeaturesCard} from "./../featuresCard/featuresCard";
 import img1 from "../../../public/image/featuresCard/feature_card_img_1.jpeg";
 import img2 from "../../../public/image/featuresCard/feature_card_img_2.jpeg";
@@ -7,7 +7,6 @@ import img3 from "../../../public/image/featuresCard/feature_card_img_3.jpeg";
 import img4 from "../../../public/image/featuresCard/feature_card_img_4.jpeg";
 import img5 from "../../../public/image/featuresCard/feature_card_img_5.jpeg";
 import icon from "../../../public/image/featuresCard/pagination.svg";
-
 
 export const Hero = () => {
   return (
@@ -44,6 +43,7 @@ export const Hero = () => {
           title="Creating deluxe drink is like playing a sport"
           links={["Victoria West"]}
         />
+
         <FeaturesCard
           className="peach"
           image={img5}
@@ -53,4 +53,4 @@ export const Hero = () => {
       </div>
     </StyledHero>
   );
-}
+};

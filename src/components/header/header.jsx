@@ -35,7 +35,7 @@ export const Header = () => {
             <li className="link">
               <Link to="styleGuide">Style guide</Link>
             </li>
-            <li className="link submenuClick">
+            <li className="link subMenuClick">
               <span className="subMenuIcon">
                 <BsThreeDots size={30} onClick={subMenuClick} />
               </span>
@@ -69,7 +69,7 @@ export const Header = () => {
               <Link to="/">Sign Up</Link>
             </div>
             <div className="btn">
-              <Button to="tags" name="Sign up" className="btnSmall" />
+              <Button to="tags" name="Sign up" className="btnSmall btn" />
             </div>
             <div className="mobileBar" onClick={mobileMenuClick}>
               <GiHamburgerMenu />
@@ -126,11 +126,11 @@ export const Header = () => {
         <div className="overlay" onClick={searchBarClick}></div>
         <div className="searchCloseBtn">
           <span>
-            <MdClose size={43} color={"#fff"} />
+            <MdClose size={43} color={"#fff"} onClick={searchBarClick} />
           </span>
         </div>
         <div className="searchBarContent">
-          <form action="/" onClick={searchBarClick}>
+          <form action="/">
             <input
               id="search-input"
               type="text"

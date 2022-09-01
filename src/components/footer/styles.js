@@ -9,6 +9,7 @@ export const StyledFooter = styled.footer`
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+  margin-top: 60px;
 
   .footerWrap {
     display: grid;

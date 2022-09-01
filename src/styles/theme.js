@@ -15,7 +15,8 @@ export const THEME = {
     colorCream: "#fdeacc",
     colorTwo: "#ededf1",
     borderColor: "#0000000f",
-    colorOne: '#f4f4f7',
+    colorOne: "#f4f4f7",
+    hoverColor: "#0000001a",
   },
 };
     
