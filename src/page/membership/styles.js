@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { THEME } from './../../styles/theme';
+import { media } from './../../styles/responsive';
 
 export const StyledMemberShip = styled.div`
   max-width: 1460px;
@@ -16,9 +17,11 @@ export const StyledMemberShip = styled.div`
     .archiveWrap {
       display: flex;
       align-items: flex-start;
-      width: 100%;
       max-width: calc(1240px * 2);
-      margin: 0 auto;
+      margin-left: 37px;
+      ${media.down("lg")}{
+        margin: 0;
+      }
       .archiveContent {
         align-items: center;
         flex: 0 1 auto;
@@ -29,9 +32,7 @@ export const StyledMemberShip = styled.div`
         border-radius: 22px;
         .h3 {
           font-size: 45px;
-          line-height: 1.2;
           margin: 0 0 0 -2px;
-          font-weight: 900;
           color: ${THEME.colors.primary};
         }
         .icon {
@@ -42,9 +43,6 @@ export const StyledMemberShip = styled.div`
           }
         }
         .description {
-          font-size: 18px;
-          font-weight: 800;
-          color: ${THEME.colors.primary};
           max-width: 336px;
           width: 100%;
           margin: 20px 0 0;
