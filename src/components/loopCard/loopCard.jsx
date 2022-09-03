@@ -6,7 +6,6 @@ import img2 from "../../../public/image/card/card_2.jpeg";
 import img3 from "../../../public/image/card/card_3.jpeg";
 import img4 from "../../../public/image/card/card_4.jpeg";
 import img5 from "../../../public/image/card/card_5.jpeg";
-import { Button } from './../button/button';
 
 export const LoopCard = () => {
   return (

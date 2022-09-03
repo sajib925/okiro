@@ -1,9 +1,10 @@
 import React from 'react'
+import { GlobalBlog } from '../../components/globalBlog/globalBlog'
 
 export const Demos = () => {
   return (
     <div>
-        <h1>This is Demos Page</h1>
+        <GlobalBlog />
     </div>
   )
 }

@@ -66,7 +66,7 @@ export const Header = () => {
               <FaSearch size={18} />
             </div>
             <div className="signUpLink">
-              <Link to="/">Sign Up</Link>
+              <Link to="/">Sign in</Link>
             </div>
             <div className="btn">
               <Button to="tags" name="Sign up" className="btnSmall btn" />

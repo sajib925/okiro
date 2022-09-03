@@ -15,7 +15,7 @@ export const FeaturesCard = (props) => {
             <Link to="/">{title}</Link>
           </h3>
           <div className="owner">
-            {props?.links.map((item, i) => [
+            {links.map((item, i) => [
               i > 0 ? ", " : "",
               <Link key={i} to="/">
                 {item}
