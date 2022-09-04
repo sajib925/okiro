@@ -81,13 +81,7 @@ export const NextPrev = (props) => {
           <small>{smallTitle}</small>
           <h3 className="h3">
             <Link to="/">
-              {title ? (
-                <h3 className="h3">
-                  <Link to="/">{title}</Link>
-                </h3>
-              ) : (
-                ""
-              )}
+              {title}
             </Link>
           </h3>
         </div>

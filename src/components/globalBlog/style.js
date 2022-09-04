@@ -7,7 +7,7 @@ export const StyledGlobalBlog = styled.div`
   width: 100%;
   margin: 0 auto;
 
-  .postHeaderSection {
+  /* .postHeaderSection {
     margin: 0 20px 40px 20px;
     display: flex;
     justify-content: flex-start;
@@ -115,7 +115,7 @@ export const StyledGlobalBlog = styled.div`
         }
       }
     }
-  }
+  } */
   .nextPrevSection {
     display: flex;
     justify-content: center;
