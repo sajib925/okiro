@@ -49,14 +49,15 @@ export const StyledHero = styled.section`
     text-transform: uppercase;
   }
   .heroCard {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
     align-items: flex-start;
     justify-content: center;
-    grid-column-gap: 20px;
-    ${media.down("sm")} {
-      grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    ${media.down("md")} {
+      flex-wrap: wrap;
     }
-    
+    ${media.down("sm")} {
+
+    }
   }
 `;

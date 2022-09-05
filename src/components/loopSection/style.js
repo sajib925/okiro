@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { media } from "../../styles/responsive";
-import { THEME } from './../../styles/theme';
+import {media} from "../../styles/responsive";
+import {THEME} from "./../../styles/theme";
 
 export const StyledLoopSection = styled.div`
   margin: 72px 0 30px;
@@ -28,8 +28,9 @@ export const StyledLoopSection = styled.div`
     justify-content: center;
     align-items: flex-start;
     column-gap: 60px;
-    ${media.down("sm")} {
+    ${media.down("md")} {
       flex-direction: column;
+      align-items: center;
     }
   }
   .thumbnail {
@@ -39,6 +40,9 @@ export const StyledLoopSection = styled.div`
         width: 100%;
         border-radius: 22px;
       }
+    }
+    ${media.down("md")}{
+      margin-bottom: 20px;
     }
   }
   .itemContent {
@@ -63,6 +67,7 @@ export const StyledLoopSection = styled.div`
         border-radius: 100px;
         background-color: ${THEME.colors.borderColor};
         transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
         &:hover {
           background-color: ${THEME.colors.hoverColor};
         }
@@ -76,25 +81,42 @@ export const StyledLoopSection = styled.div`
       line-height: 1.2;
       width: 100%;
       max-width: 540px;
+      ${media.down("xl")} {
+        font-size: 44px;
+      }
+      ${media.down("lg")} {
+        font-size: 40px;
+      }
+      ${media.down("md")} {
+        font-size: 48px;
+      }
+      ${media.down("sm")} {
+        font-size: 32px;
+      }
       a {
         text-decoration: none;
         color: ${THEME.colors.primary};
       }
     }
-    .icon {
-      margin: 50px 0 10px 0;
+    .description {
+      margin-top: 50px;
       img {
+        margin-bottom: 10px;
         width: 90px;
         opacity: 0.1;
       }
-    }
-    .description {
       font-size: 18px;
       font-weight: 800;
       margin-bottom: 40px;
       color: ${THEME.colors.primary};
       width: 100%;
       max-width: 480px;
+      ${media.down("xl")} {
+        display: none;
+      }
+      ${media.down("md")} {
+        display: block;
+      }
     }
     .itemMeta {
       display: flex;

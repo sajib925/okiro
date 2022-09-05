@@ -7,6 +7,7 @@ export const Card = (props) => {
   return (
     <StyledCard>
       <article className={className}>
+        <Link to="/" className='GlobalLink'></Link>
         <div className="itemContainer">
           <div className="thumbnail">
             <img src={image} alt="" />
@@ -15,7 +16,7 @@ export const Card = (props) => {
             <h2 className="h2">
               <Link to="/">{title}</Link>
             </h2>
-            <div className="author">
+            <div className="author globalPointer">
               {props?.links.map((item, i) => [
                 i > 0 ? ", " : "",
                 <Link key={i} to="/">
@@ -24,7 +25,7 @@ export const Card = (props) => {
               ])}
             </div>
           </div>
-          <div className="itemTags">
+          <div className="itemTags globalPointer">
             <Link to="/">{tags}</Link>
           </div>
         </div>

@@ -7,6 +7,7 @@ export const FeaturesCard = (props) => {
   return (
     <StyledFeaturesCard>
       <article className={className}>
+        <Link to="" className="globalLink"></Link>
         <div className="thumbnail">
           <img src={image} alt="" />
         </div>

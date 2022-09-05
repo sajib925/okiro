@@ -27,10 +27,9 @@ export const LoopSection = () => {
                 I work best when my space is filled with inspiration
               </Link>
             </h2>
-            <div className="icon">
-              <img src={icon} alt="icon" />
-            </div>
+            {/* <div className="icon"></div> */}
             <p className="description">
+              <img src={icon} alt="icon" />
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat ut
               facilisis rutrum donec tristique mauris est ac nunc. Eget nec,
               lorem mi libero accumsan....

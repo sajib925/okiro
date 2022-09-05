@@ -21,6 +21,10 @@ export const Header = () => {
   const searchBarClick = () => {
     setSearchBar((searchBar) => !searchBar);
   };
+  const [change , setChange] = useState({})
+  const handleChange = (e) => {
+    setChange(e.target.value)
+  }
   return (
     <StyledHeader>
       <div className="header">
@@ -48,7 +52,7 @@ export const Header = () => {
               >
                 {ROUTES.map(({to, name}, i) => {
                   return (
-                    <li key={i} className="subMenuLink">
+                    <li key={i} className="subMenuLink" onClick={subMenuClick}>
                       <Link to={to}>{name}</Link>
                     </li>
                   );
@@ -105,7 +109,7 @@ export const Header = () => {
             </li>
           </ul>
           <div className="btn">
-            <Button to="tags" name="Sign up" className="btnSmall" />
+            <Button to="tags" name="Sign up" className="btn btnSmall" />
           </div>
           <div className="searchLink" onClick={searchBarClick}>
             <span className="text">Search</span>
@@ -135,9 +139,14 @@ export const Header = () => {
               id="search-input"
               type="text"
               placeholder="Type your keywords"
+              onChange={handleChange}
             />
             <div className="searchMeta">
-              <span id="search-info">Please enter at least 3 characters</span>
+              <span>
+                {change
+                  ? "0 Results for your search"
+                  : "Please enter at least 1 characters"}
+              </span>
             </div>
           </form>
         </div>

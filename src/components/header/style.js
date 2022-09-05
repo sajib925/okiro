@@ -144,6 +144,7 @@ export const StyledHeader = styled.header`
     }
     /* mobile menu style start here  */
     .mobileNav {
+      z-index: 99999;
       position: absolute;
       top: 50px;
       right: -12px;

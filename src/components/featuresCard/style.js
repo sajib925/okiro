@@ -19,14 +19,28 @@ export const StyledFeaturesCard = styled.div`
     background-color: ${THEME.colors.colorPeach};
   }
   article {
+    position: relative;
     cursor: pointer;
     padding: 18px;
     margin: 0 20px;
     border-radius: 22px;
     transition: transform 0.2s ease;
     transform: translateY(0);
+    ${media.down("md")} {
+      max-width: 100%;
+      margin-bottom: calc(10px * 2);
+    }
+
+    .globalLink {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
     ${media.down("xl")} {
-      margin: 0;
+      /* margin: 0; */
     }
     &:hover {
       transform: translateY(-4px);
@@ -75,6 +89,7 @@ export const StyledFeaturesCard = styled.div`
         a {
           font-size: 13px;
           line-height: 1.4;
+          font-weight: 800;
           text-decoration: none;
           color: ${THEME.colors.primary};
           position: relative;

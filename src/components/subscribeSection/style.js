@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { THEME } from './../../styles/theme';
+import { media } from './../../styles/responsive';
 
 export const StyledSubscribeSection = styled.div`
   .subscribeWrap {
@@ -7,6 +8,11 @@ export const StyledSubscribeSection = styled.div`
     width: 100%;
     max-width: 1120px;
     margin: 20vh auto 0;
+    ${media.down("md")} {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
     .h3 {
       font-size: 46px;
       font-weight: 900;
@@ -17,17 +23,21 @@ export const StyledSubscribeSection = styled.div`
       margin: 0;
       padding: 25px 5% 25px 0;
     }
+
     form {
       position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-sizing: border-box;
       margin-left: auto;
       padding: 10px;
       border-radius: 100px;
       background-color: ${THEME.colors.colorTwo};
       margin-right: 98px;
+      ${media.down("md")} {
+        margin-left: initial;
+        margin-right: 0;
+      }
       input {
         font-size: 20px;
         display: block;
@@ -40,7 +50,6 @@ export const StyledSubscribeSection = styled.div`
         border: none;
         background-color: transparent;
       }
-      
     }
   }
 `;
