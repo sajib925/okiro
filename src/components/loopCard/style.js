@@ -2,9 +2,13 @@ import styled from "styled-components";
 import { media } from './../../styles/responsive';
 
 export const StyledLoopCard = styled.div`
-  margin: 0 170px;
+  padding: 0 20px;
+  
+  ${media.down("lg")} {
+    padding: 0 15px;
+  }
   ${media.down("md")} {
-    margin: 0;
+    padding: 0 10px;
   }
 
   .cards {

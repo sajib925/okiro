@@ -6,8 +6,6 @@ export const StyledFeaturesCard = styled.div`
   ${media.down("sm")} {
     min-width: 90%;
   }
-  /* /* Setting the width of the element to 100% of the parent element. */
-  width: 100%; */
   .pool {
     background-color: ${THEME.colors.colorPool};
   }

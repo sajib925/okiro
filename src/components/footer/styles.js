@@ -92,6 +92,11 @@ export const StyledFooter = styled.footer`
         width: 100%;
         justify-content: space-evenly;
       }
+      .footerNavColumn {
+        ${media.down("sm")} {
+          /* width: 50%; */
+        }
+      }
 
       small {
         font-size: 10px;
@@ -101,6 +106,11 @@ export const StyledFooter = styled.footer`
         letter-spacing: 4px;
         text-transform: uppercase;
         font-weight: 800;
+      }
+      .footerNavColumn {
+        ${media.down("sm")} {
+          width: 50%;
+        }
       }
       ul {
         padding: 0;
@@ -114,7 +124,7 @@ export const StyledFooter = styled.footer`
             font-weight: 900;
             position: relative;
             transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-            ${media.down("lg")}{
+            ${media.down("lg")} {
               font-size: 14px;
             }
             &:hover {

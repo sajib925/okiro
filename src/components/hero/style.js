@@ -53,7 +53,7 @@ export const StyledHero = styled.section`
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 20px;
+    gap: 20px;
     ${media.down("md")} {
     }
     ${media.down("sm")} {

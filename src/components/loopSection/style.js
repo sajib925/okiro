@@ -26,16 +26,34 @@ export const StyledLoopSection = styled.div`
   .itemContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
     align-items: flex-start;
     column-gap: 60px;
+    padding: 0 20px;
+    ${media.down("xl")} {
+      column-gap: 35px;
+    }
+    ${media.down("lg")} {
+      column-gap: 20px;
+    }
     ${media.down("md")} {
+      padding: 0 15px;
       flex-direction: column;
-      align-items: center;
+    }
+    ${media.down("sm")} {
+      padding: 0 10px;
     }
   }
   .thumbnail {
+    ${media.down("md")} {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto 20px;
+    }
+
     a {
       img {
+        
         max-width: 600px;
         width: 100%;
         border-radius: 22px;
@@ -101,7 +119,9 @@ export const StyledLoopSection = styled.div`
         text-align: center;
         margin-top: 20px;
         margin-bottom: 5px;
-        margin-left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
         font-size: 32px;
       }
       a {

@@ -17,7 +17,6 @@ export const StyledCard = styled.div`
   }
   .cream {
     background-color: ${THEME.colors.colorCream};
-    width: 520px;
   }
   article {
     width: 100%;
@@ -32,8 +31,12 @@ export const StyledCard = styled.div`
     flex-wrap: wrap;
     max-width: 333px;
     /* height: 563px; */
+    ${media.down("lg")} {
+      max-width: 220px;
+      margin: 10px;
+    }
     ${media.down("md")} {
-      max-width: 300px;
+      max-width: 270px;
       margin: 10px;
     }
     .GlobalLink {

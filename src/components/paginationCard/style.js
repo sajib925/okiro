@@ -49,7 +49,7 @@ export const StyledPaginationCard = styled.div`
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    column-gap: 10px;
+    gap: 20px;
     .card {
       ${media.down("sm")} {
         width: 100%;

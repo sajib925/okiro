@@ -5,9 +5,15 @@ import { media } from './../../styles/responsive';
 export const StyledSubscribeSection = styled.div`
   .subscribeWrap {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     max-width: 1120px;
     margin: 20vh auto 0;
+    ${media.down("lg")} {
+      margin: 5vh auto 0;
+      flex-direction: column;
+    }
     ${media.down("md")} {
       flex-direction: column;
       align-items: center;
@@ -40,11 +46,19 @@ export const StyledSubscribeSection = styled.div`
       padding: 10px;
       border-radius: 100px;
       background-color: ${THEME.colors.colorTwo};
-      
-      ${media.down("md")} {
+      ${media.down("xl")} {
         margin-left: initial;
         margin-right: 0;
       }
+      /* ${media.down("lg")} {
+        margin-left: initial;
+        margin-right: 0;
+      }
+
+      ${media.down("md")} {
+        margin-left: initial;
+        margin-right: 0;
+      } */
       ${media.down("sm")} {
         max-width: 90%;
         padding-top: 6px;
