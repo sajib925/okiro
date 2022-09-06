@@ -17,30 +17,38 @@ export const PaginationCard = () => {
         </div>
       </div>
       <div className="cards">
-        <FeaturesCard
-          className="pool"
-          image={img1}
-          title="Don’t be afraid"
-          links={["Megan Anderson", "Lauren Langford"]}
-        />
-        <FeaturesCard
-          className="aqua"
-          image={img6}
-          title="Anyone can hold the helm when the sea is calm"
-          links={["Megan Anderson", "Charles Barrett"]}
-        />
-        <FeaturesCard
-          className="peach"
-          image={img7}
-          title="Cuisine is a mirror, reflecting the culture"
-          links={["Victoria West", "Patricia Jenkins"]}
-        />
-        <FeaturesCard
-          className="sand"
-          image={img3}
-          title="I always loved aesthetics"
-          links={["Hannah Weastell", "Victoria West"]}
-        />
+        <div className="card">
+          <FeaturesCard
+            className="pool"
+            image={img1}
+            title="Don’t be afraid"
+            links={["Megan Anderson", "Lauren Langford"]}
+          />
+        </div>
+        <div className="card">
+          <FeaturesCard
+            className="aqua"
+            image={img6}
+            title="Anyone can hold the helm when the sea is calm"
+            links={["Megan Anderson", "Charles Barrett"]}
+          />
+        </div>
+        <div className="card">
+          <FeaturesCard
+            className="peach"
+            image={img7}
+            title="Cuisine is a mirror, reflecting the culture"
+            links={["Victoria West", "Patricia Jenkins"]}
+          />
+        </div>
+        <div className="card">
+          <FeaturesCard
+            className="sand"
+            image={img3}
+            title="I always loved aesthetics"
+            links={["Hannah Weastell", "Victoria West"]}
+          />
+        </div>
       </div>
     </StyledPaginationCard>
   );

@@ -48,9 +48,12 @@ export const StyledPaginationCard = styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
     column-gap: 10px;
-    ${media.down("md")} {
-      flex-wrap: wrap;
+    .card {
+      ${media.down("sm")} {
+        width: 100%;
+      }
     }
   }
 `;

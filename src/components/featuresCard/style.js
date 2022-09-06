@@ -3,6 +3,11 @@ import { media } from "../../styles/responsive";
 import { THEME } from './../../styles/theme';
 
 export const StyledFeaturesCard = styled.div`
+  ${media.down("sm")} {
+    min-width: 90%;
+  }
+  /* /* Setting the width of the element to 100% of the parent element. */
+  width: 100%; */
   .pool {
     background-color: ${THEME.colors.colorPool};
   }
@@ -26,9 +31,13 @@ export const StyledFeaturesCard = styled.div`
     border-radius: 22px;
     transition: transform 0.2s ease;
     transform: translateY(0);
+    width: 230px;
     ${media.down("md")} {
       max-width: 100%;
       margin-bottom: calc(10px * 2);
+    }
+    ${media.down("sm")} {
+      min-width: 90%;
     }
 
     .globalLink {
@@ -53,11 +62,8 @@ export const StyledFeaturesCard = styled.div`
         border-radius: 22px;
         margin-bottom: 14px;
         object-fit: cover;
-        ${media.down("lg")} {
-          width: 177px;
-        }
-        ${media.down("md")} {
-          width: 175px;
+        ${media.down("sm")} {
+          min-width: 100%;
         }
       }
     }

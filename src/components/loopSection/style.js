@@ -41,7 +41,7 @@ export const StyledLoopSection = styled.div`
         border-radius: 22px;
       }
     }
-    ${media.down("md")}{
+    ${media.down("md")} {
       margin-bottom: 20px;
     }
   }
@@ -51,6 +51,9 @@ export const StyledLoopSection = styled.div`
       align-items: flex-start;
       flex-wrap: wrap;
       margin-left: -3px;
+      ${media.down("md")} {
+        justify-content: center;
+      }
       a {
         font-size: 9px;
         line-height: 10px;
@@ -89,8 +92,16 @@ export const StyledLoopSection = styled.div`
       }
       ${media.down("md")} {
         font-size: 48px;
+        max-width: 90%;
+        width: 100%;
+        margin: 0 auto 25px;
+        text-align: center;
       }
       ${media.down("sm")} {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        margin-left: 0;
         font-size: 32px;
       }
       a {
@@ -104,6 +115,12 @@ export const StyledLoopSection = styled.div`
         margin-bottom: 10px;
         width: 90px;
         opacity: 0.1;
+        ${media.down("md")} {
+          margin: 0 auto 10px;
+        }
+        ${media.down("sm")} {
+          margin: 0 auto 10px;
+        }
       }
       font-size: 18px;
       font-weight: 800;
@@ -116,11 +133,26 @@ export const StyledLoopSection = styled.div`
       }
       ${media.down("md")} {
         display: block;
+        max-width: 90%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+      ${media.down("sm")} {
+        width: 100%;
       }
     }
     .itemMeta {
       display: flex;
       column-gap: 24px;
+      ${media.down("md")} {
+        justify-content: center;
+      }
+      ${media.down("sm")} {
+        flex-direction: column;
+        align-items: center;
+      }
       .itemImg {
         .firstImg {
           z-index: 111;

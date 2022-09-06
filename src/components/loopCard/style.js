@@ -12,19 +12,15 @@ export const StyledLoopCard = styled.div`
     max-width: 1120px;
     margin-right: auto;
     margin-left: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     ${media.down("md")} {
-      grid-template-columns: 1fr 1fr;
     }
     ${media.down("md")} {
-      grid-template-columns: 1fr;
     }
-    /* .card:nth-child(4) {
-      width: 50%;
+    ${media.down("sm")} {
     }
-    .card:nth-child(5) {
-      width: 50%;
-    } */
   }
 `;

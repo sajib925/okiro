@@ -22,21 +22,33 @@ export const StyledSubscribeSection = styled.div`
       max-width: 700px;
       margin: 0;
       padding: 25px 5% 25px 0;
+      ${media.down("sm")} {
+        font-size: 34px;
+        text-align: center;
+        padding: 15px 5%;
+      }
     }
 
     form {
+      margin-right: 98px;
       position: relative;
       display: flex;
       align-items: center;
-      justify-content: center;
+      flex: 0 0 auto;
+      box-sizing: border-box;
       margin-left: auto;
       padding: 10px;
       border-radius: 100px;
       background-color: ${THEME.colors.colorTwo};
-      margin-right: 98px;
+      
       ${media.down("md")} {
         margin-left: initial;
         margin-right: 0;
+      }
+      ${media.down("sm")} {
+        max-width: 90%;
+        padding-top: 6px;
+        padding-bottom: 6px;
       }
       input {
         font-size: 20px;
@@ -49,6 +61,13 @@ export const StyledSubscribeSection = styled.div`
         outline: none;
         border: none;
         background-color: transparent;
+        ${media.down("sm")} {
+          font-size: 16px;
+          padding-right: 10px;
+          padding-left: 10px;
+          width: 138px;
+          height: 60px;
+        }
       }
     }
   }

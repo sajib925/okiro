@@ -52,12 +52,12 @@ export const StyledHero = styled.section`
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    flex-wrap: wrap;
     column-gap: 20px;
     ${media.down("md")} {
-      flex-wrap: wrap;
     }
     ${media.down("sm")} {
-
+      
     }
   }
 `;

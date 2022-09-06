@@ -150,7 +150,7 @@ export const StyledHeader = styled.header`
       right: -12px;
       display: flex;
       flex-wrap: wrap;
-      max-width: 200px;
+      min-width: 200px;
       padding-top: 15px;
       background-color: ${THEME.colors.colorTwo};
       border-radius: 22px;

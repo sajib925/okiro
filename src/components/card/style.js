@@ -31,7 +31,7 @@ export const StyledCard = styled.div`
     display: flex;
     flex-wrap: wrap;
     max-width: 333px;
-    height: 563px;
+    /* height: 563px; */
     ${media.down("md")} {
       max-width: 300px;
       margin: 10px;
