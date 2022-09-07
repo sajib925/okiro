@@ -9,8 +9,54 @@ export const StyledGlobalBlog = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 70px;
+    ${media.down("xl")} {
+      margin-top: 55px;
+    }
+    ${media.down("lg")} {
+      margin-top: 40px;
+      flex-direction: column;
+    }
+
+    ${media.down("md")} {
+      margin-top: 30px;
+    }
+    
   }
   .globalSection {
+    margin-top: 70px;
+    ${media.down("xl")} {
+      margin-top: 55px;
+    }
+    ${media.down("lg")} {
+      margin-top: 40px;
+    }
+
+    ${media.down("md")} {
+      margin-top: 30px;
+    }
+    .sectionTitle {
+      display: none;
+      ${media.down("lg")} {
+        display: block;
+      }
+      margin-bottom: 20px;
+      .title {
+        text-align: center;
+      }
+      .icon {
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0 5px 0;
+        img {
+          width: 90px;
+          opacity: 0.1;
+        }
+      }
+    }
     position: relative;
 
     small {
@@ -27,6 +73,9 @@ export const StyledGlobalBlog = styled.div`
       text-align: right;
       letter-spacing: 8px;
       text-transform: uppercase;
+      ${media.down("lg")} {
+        display: none;
+      }
     }
     .cards {
       max-width: 1120px;
@@ -35,6 +84,12 @@ export const StyledGlobalBlog = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
+      .card {
+        ${media.down("sm")} {
+          width: 100%;
+        }
+      }
     }
   }
 `;

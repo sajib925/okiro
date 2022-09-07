@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState,useRef} from "react";
 import {StyledHeader} from "./style";
 import {Link} from "react-router-dom";
 import {ROUTES} from "../../routes";
@@ -9,13 +9,16 @@ import {FaSearch} from "react-icons/fa";
 import {GiHamburgerMenu} from "react-icons/gi";
 import {MdClose} from "react-icons/md";
 export const Header = () => {
+  const closeMenu = useRef()
   const [subMenu, setSubMenu] = useState(false);
   const subMenuClick = () => {
     setSubMenu((subMenu) => !subMenu);
   };
+  
   const [mobileMenu, setMobileMenu] = useState(false);
   const mobileMenuClick = () => {
     setMobileMenu((mobileMenu) => !mobileMenu);
+    closeMenu.current.classList.toggle("closeMobileMenu")
   };
   const [searchBar, setSearchBar] = useState(false);
   const searchBarClick = () => {
@@ -76,7 +79,11 @@ export const Header = () => {
               <Button to="tags" name="Sign up" className="btnSmall btn" />
             </div>
             <div className="mobileBar" onClick={mobileMenuClick}>
-              <GiHamburgerMenu />
+              <div ref={closeMenu} className="toggleMenu">
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
+              </div>
             </div>
           </div>
         </div>
@@ -88,18 +95,18 @@ export const Header = () => {
           }
         >
           <ul className="mobileMenuLinks">
-            <li className="link">
+            <li className="link" onClick={mobileMenuClick}>
               <Link to="/">Home</Link>
             </li>
-            <li className="link">
+            <li className="link" onClick={mobileMenuClick}>
               <Link to="membership">Membership</Link>
             </li>
-            <li className="link">
+            <li className="link" onClick={mobileMenuClick}>
               <Link to="styleGuide">Style guide</Link>
             </li>
             {ROUTES.map(({to, name}, i) => {
               return (
-                <li key={i} className="link">
+                <li key={i} className="link" onClick={mobileMenuClick}>
                   <Link to={to}>{name}</Link>
                 </li>
               );

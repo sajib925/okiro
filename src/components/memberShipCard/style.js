@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { THEME } from './../../styles/theme';
-import { media } from './../../styles/responsive';
+import {THEME} from "../../styles/theme";
+import {media} from "../../styles/responsive";
 
 export const StyledMemberShipCard = styled.section`
   .title {
@@ -61,9 +61,16 @@ export const StyledMemberShipCard = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    ${media.down("lg")}{
+    ${media.down("lg")} {
       flex-wrap: wrap;
     }
+  }
+  .freeCard {
+    min-height: 610px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
   .card {
     overflow: hidden;
@@ -74,7 +81,6 @@ export const StyledMemberShipCard = styled.section`
     margin: 20px;
     padding-bottom: 5vh;
     text-align: center;
-    color: var(--color-font-one);
     border-radius: 22px;
     background-color: ${THEME.colors.colorOne};
 

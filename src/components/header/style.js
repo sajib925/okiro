@@ -140,6 +140,27 @@ export const StyledHeader = styled.header`
         ${media.down("lg")} {
           display: block;
         }
+        .toggleMenu {
+          .bar {
+            display: block;
+            width: 25px;
+            height: 4px;
+            margin: 5px auto;
+            transition: all 0.3s ease-in-out;
+            background-color: ${THEME.colors.primary};
+          }
+        }
+        .closeMobileMenu {
+          .bar:nth-child(2) {
+            opacity: 0;
+          }
+          .bar:nth-child(1) {
+            transform: translateY(8px) rotate(-45deg);
+          }
+          .bar:nth-child(3) {
+            transform: translateY(-10px) rotate(45deg);
+          }
+        }
       }
     }
     /* mobile menu style start here  */

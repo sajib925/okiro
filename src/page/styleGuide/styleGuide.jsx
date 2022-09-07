@@ -1,9 +1,10 @@
 import React from 'react'
+import { StyledGuide } from './styles';
 
 export const StyleGuide = () => {
   return (
-    <div>
-        <h1>This is style guide page</h1>
-    </div>
-  )
+    <StyledGuide>
+      <h1>This is style guide page</h1>
+    </StyledGuide>
+  );
 }

@@ -4,10 +4,18 @@ import icon from '../../../../public/image/globalBlog/apple-touch-icon.png'
 import img from "../../../../public/image/globalBlog/global_2.jpg";
 import { Link } from 'react-router-dom';
 import { THEME } from './../../../styles/theme';
+import { media } from './../../../styles/responsive';
 const StyledBookmark = styled.div`
-  margin: 50px 380px;
-  /* width: 100%; */
-
+  margin: 0 auto 50px;
+  width: 100%;
+  max-width: 740px;
+  padding: 0 20px;
+  ${media.down("md")} {
+    margin: 0 auto 30px;
+  }
+  ${media.down("sm")} {
+    margin: 0 auto 20px;
+  }
   a {
     position: relative;
     z-index: 2;

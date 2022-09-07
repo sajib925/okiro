@@ -19,7 +19,7 @@ export const StyledMemberShip = styled.div`
       align-items: flex-start;
       max-width: calc(1240px * 2);
       margin-left: 37px;
-      ${media.down("lg")}{
+      ${media.down("lg")} {
         margin: 0;
       }
       .archiveContent {
@@ -30,12 +30,25 @@ export const StyledMemberShip = styled.div`
         padding: 32px 52px;
         background-color: ${THEME.colors.bodyColor};
         border-radius: 22px;
-        .h3 {
+        ${media.down("md")} {
+          padding: 24px 26px;
+        }
+        .h1 {
           font-size: 45px;
           margin: 0 0 0 -2px;
           color: ${THEME.colors.primary};
+          text-align: center;
+          ${media.down("lg")} {
+            font-size: 36px;
+          }
+          ${media.down("md")} {
+            font-size: 30px;
+          }
         }
         .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           img {
             width: 80px;
             opacity: 0.1;
@@ -46,6 +59,7 @@ export const StyledMemberShip = styled.div`
           max-width: 336px;
           width: 100%;
           margin: 20px 0 0;
+          text-align: center;
         }
       }
     }

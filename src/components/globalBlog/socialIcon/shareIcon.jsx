@@ -5,11 +5,25 @@ import icon from '../../../../public/image/social/icon.svg'
 import { BsTwitter } from 'react-icons/bs'
 import { BsFacebook } from 'react-icons/bs'
 import { THEME } from './../../../styles/theme';
+import { media } from './../../../styles/responsive';
 const StyledShareIcon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 24px;
+  margin-bottom: 75px;
+  ${media.down("xl")} {
+    margin-bottom: 60px;
+  }
+  ${media.down("lg")} {
+    margin-bottom: 45px;
+  }
+  ${media.down("md")} {
+    margin-bottom: 30px;
+  }
+  ${media.down("md")} {
+    margin-bottom: 20px;
+  }
   a {
     position: relative;
     z-index: 0;

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from 'react-router-dom';
 // import img1 from '../../../../public/image/loop/loop_section_1.jpeg'
 import { THEME } from './../../../styles/theme';
+import { media } from './../../../styles/responsive';
 
 const StyledNextPrev = styled.div`
   .prev {
@@ -14,8 +15,14 @@ const StyledNextPrev = styled.div`
     border-radius: 22px;
     display: flex;
     background-color: ${THEME.colors.colorAvocado};
-
-
+    ${media.down("md")} {
+      margin: 10px;
+      padding: 16px;
+    }
+    ${media.down("md")} {
+      margin: 5px;
+      padding: 14px;
+    }
   }
   .next {
     flex: 1 0 calc(50% - 20px * 2);
@@ -27,10 +34,18 @@ const StyledNextPrev = styled.div`
     display: flex;
     flex-direction: row-reverse;
     background-color: ${THEME.colors.colorAqua};
-    small{
+    ${media.down("md")} {
+      margin: 10px;
+      padding: 16px;
+    }
+    ${media.down("md")} {
+      margin: 5px;
+      padding: 14px;
+    }
+    small {
       text-align: end;
     }
-    .h3{
+    .h3 {
       text-align: end;
     }
   }
@@ -61,6 +76,9 @@ const StyledNextPrev = styled.div`
       margin-top: 10px;
       margin-bottom: 14px;
       font-weight: 900;
+      ${media.down("sm")} {
+        font-size: 15px;
+      }
       a {
         text-decoration: none;
         color: ${THEME.colors.primary};

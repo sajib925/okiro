@@ -12,7 +12,7 @@ export const Membership = () => {
       <div className="memberShipArchiveSection">
         <div className="archiveWrap">
           <div className="archiveContent">
-            <Title tag="h3" className="h3">
+            <Title tag="h1" className="h1">
               Membership
             </Title>
             <div className="icon">

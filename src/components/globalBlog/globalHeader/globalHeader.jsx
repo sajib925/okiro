@@ -43,7 +43,7 @@ export const GlobalHeader = () => {
                 Lauren Langford
               </Link>
               <div className="times">
-                <time datetime="2020-08-12">August 12, 2020</time> ∙ 3 minutes
+                <time dateTime="2020-08-12">August 12, 2020</time> ∙ 3 minutes
                 read
               </div>
             </div>
